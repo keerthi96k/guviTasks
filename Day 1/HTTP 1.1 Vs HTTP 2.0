@@ -1,0 +1,10 @@
+Differences between HTPT 1.1 and HTTP 2
+
+1) HTTP 1.1 had limited TCP connections between client and the server. Whenever a client requests for a URL, TCP connection is established between a client and a server, and only after a request is fulfilled the next request will be sent. This slows down the request response cycle. Whereas in HTTP 2 a single TCP connection pipeline is used, in which different http request can be made via streams. Due to this multiplexing, the request response cycle is faster as there is no need to setup multiple TCP connections.
+
+2) In HTTP 1.1 every request is independent of next and previous request, and it carries its own header and request data for every request. The header data maybe repetitive with every request and cannot be compressed. Whereas in HTTP 2 HPACK (Header Compression Algorithm), is introduced, where reuse of repetitive header data by automatically caching of header data if preceding request had repeated data. Here header data and request data are separate, and can be compressed. HPACK reduces http request size.
+
+3) HTTP 1.1 uses text commands to complete a command request cycle. In comparison, HTTP 2 uses Binary Protocol which eases complications with framing and simplifies implementation of commands and is less prone to errors. This also indicates that the network resources are effectively utilized and secure.
+
+4) PUSH frame is one of the features of HTTP 2 where PUSH frames enable us to send mandatory resources in advance along with http response, so that the client does not have to wait until each response to send another request/command (like http 1.1).
+
