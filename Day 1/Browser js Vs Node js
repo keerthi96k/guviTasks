@@ -1,0 +1,6 @@
+Browser js Vs Node.js
+1) A browser js has windows objects which is not present in node js. Instead node js has global which has similar properties as that of windows.
+2) A browser js has document which contains information about DOM. Whereas Node js has access to process, which provides information of the current process.
+3) Browser has an inbuit interpreter for the js and a run time environment for running web pages on client-side. Whereas for Node js has a run time environment outside the browser.
+4) In Node js the developer has the freedom to control the environment. In contrast browser js doesn't provide the flexibility of using the same browser as that of the end user.
+5) The browser interacts with the DOM or other Web Platform APIs like Cookies most of the time, which does not exist in node js.
