@@ -73,6 +73,41 @@ function transformGeekData(arr){
     }
     return transform;
 }
-console.log(transformGeekData(array2))
+//console.log(transformGeekData(array2))
 
-//
+//Write an “assertObjectsEqual” function from scratch.
+//Assume that the objects in question contain only scalar values (i.e., simple values like strings or numbers).
+//It is OK to use JSON.stringify().
+//Note: The examples below represent different use cases for the same test.
+//In practice, you should never have multiple tests with the same name.
+var expected = {foo: 5, bar: 6};
+var actual = {foo: 5, bar: 6}
+function assertObjectsEqual(actual, expected){
+ if(JSON.stringify(actual)==JSON.stringify(expected)){
+     return 'Passed'
+ }
+ return 'FAILED [my test] Expected'+ expected +', but got '+ actual;
+}
+//console.log(assertObjectsEqual(actual, expected));
+
+//Parsing JSON objects and Compare:
+//Write a function to return the list of characters below 20 age
+
+var students = [
+    {
+    name: 'Siddharth Abhimanyu', age: 21}, { name: 'Malar', age: 25},
+    {name: 'Maari',age: 18},{name: 'Bhallala Deva',age: 17},
+    {name: 'Baahubali',age: 16},{name: 'AAK chandran',age: 23},  
+    {name:'Gabbar Singh',age: 33},{name: 'Mogambo',age: 53},
+    {name: 'Munnabhai',age: 40},{name: 'Sher Khan',age: 20},
+    {name: 'Chulbul Pandey',age: 19},{name: 'Anthony',age: 28},
+    {name: 'Devdas',age: 56} 
+    ];
+    console.log(returnMinors(students));
+   function returnMinors(arr)
+   {
+    const minors = arr.filter((item)=>{
+        return item.age<20
+   })
+   return minors
+}
