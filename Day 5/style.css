@@ -1,0 +1,183 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+html{
+    color: black;
+    font-family: calibri;
+}
+
+
+.container{
+    height: 300px;
+    position: relative;
+    
+  }
+  
+  .header {
+    background: rgba(8, 8, 8, 0.87); 
+    height: 300px;
+    position: relative;;
+  }
+
+  
+.center{
+    width:12rem;
+    height:12rem;
+    border-radius: 1000px;
+    border-style: dotted;
+    border-color: rgb(255, 196, 0);
+    position: absolute;
+  top:20%;
+  left:41%;
+  text-align: center;
+  }
+  
+  .roundedrect {
+    position: absolute;
+    top:65%;
+    left:36%;
+    text-align: center;
+    border-radius: 5px;
+    background:rgb(255, 196, 0);
+    padding: 20px; 
+    width: 25%;
+    color:black;
+    font-size: 30px;
+  }
+body{
+    padding: 3rem 5rem;
+    background-color: linear-gradient();
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+    color: #888;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+html {
+    color: #222;
+}
+
+.address{
+    border-bottom: 1px solid #888;
+    margin-top: 0.2rem;
+    text-align: center;
+    padding: 1rem 0;    
+}
+
+p {
+    line-height: 1.5;
+}
+
+section + section {
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: name;
+    color: inherit;
+}
+
+img {
+    border-radius: 9999px;
+    width: 8rem;
+    height: 8rem;
+    border-style: dotted;
+    position: absolute;
+    border-color: orange;
+    top:40;
+
+}
+
+.roundBox {
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    background-color: orange;
+    padding: 25px;
+    width: 25%;
+    margin: auto;
+}
+
+.head {
+    position: relative;
+    text-align: center;
+    background-color: #444;
+    font-size: x-large;
+}
+
+.skills h3 {
+    text-align: center;
+}
+
+li{
+    margin-bottom:15px;
+  }
+
+progress {
+    background-color: linear-gradiant( #ffa500, grey);
+    border-radius: 2px;
+}
+
+.skills ul {
+list-style-type: none;
+}
+
+.roleDate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 250px; 
+  
+  }
+
+.TechSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.AddSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dur {
+    text-align: right;
+}
+
+.column {
+    float: left;
+    width: 90%  } 
+  
+.row {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+  
+  .vertical { 
+    border-left: #444; 
+    height: 200px; 
+    position:absolute; 
+    left: 50%; 
+} 
+
+.content{
+    border-left: 1px solid #888;
+    padding-left: 1.5rem;
+    margin-left:1rem;
+  }
+
